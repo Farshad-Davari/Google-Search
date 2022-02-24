@@ -1,0 +1,136 @@
+.link-btn-style, body #container #links a button {
+  background-color: #E60965;
+  color: #FFFFFF;
+  border: 1px solid #E60965;
+  padding: 10px;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-weight: bold; }
+
+.search-bar-style, body #container #search-box form #search-bar {
+  height: 43px;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 25px;
+  margin: 0 auto;
+  max-width: 585px;
+  padding: 10px;
+  font-size: 1.05rem;
+  outline: none;
+  width: 570px;
+  padding-left: 45px;
+  margin-top: 25px;
+  font-family: Arial, sans-serif; }
+
+.search-btn-style, body #container #search-box form input[type=submit] {
+  background-color: #F8F9FA;
+  color: #333;
+  padding: 0 16px;
+  text-align: center;
+  height: 35px;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: Arial, sans-serif; }
+
+body #container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100%; }
+  body #container #links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 15px;
+    height: 100px; }
+    body #container #links a {
+      margin: 12px; }
+      body #container #links a button:hover {
+        opacity: 0.9;
+        cursor: pointer; }
+  body #container #search-box {
+    margin-top: 120px;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    body #container #search-box #search-1 {
+      position: absolute;
+      top: 75%;
+      right: 0;
+      bottom: 0;
+      left: 32.2%;
+      color: #9aa0a6; }
+    body #container #search-box form {
+      display: block;
+      flex-flow: column wrap; }
+      body #container #search-box form #search-bar {
+        display: block; }
+      body #container #search-box form #search-bar:hover {
+        background-color: #fff;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+        border-color: rgba(223, 225, 229, 0); }
+      body #container #search-box form input[type=submit] {
+        position: absolute;
+        margin: 30px;
+        margin-left: 210px; }
+      body #container #search-box form input[type=submit]:hover {
+        cursor: pointer;
+        border: 1px solid #dfdfe0; }
+    body #container #search-box img {
+      display: block;
+      width: 19%; }
+    body #container #search-box span {
+      color: #4285f4;
+      font: 16px/16px roboto-regular, arial, sans-serif;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      left: 55.5%; }
+    body #container #search-box #photo {
+      height: 23px;
+      width: 23px;
+      background: url("//www.gstatic.com/images/icons/material/system/2x/photo_camera_grey600_24dp.png") 0 0 no-repeat;
+      background-size: auto;
+      background-size: 24px;
+      position: absolute;
+      top: 75%;
+      left: 63.4%; }
+    body #container #search-box #photo:hover {
+      cursor: pointer; }
+    body #container #search-box #search-2 {
+      color: #4285f4;
+      position: absolute;
+      top: 75%;
+      left: 66.5%; }
+    body #container #search-box #search-2:hover {
+      cursor: pointer; }
+  body #container #footer {
+    background-color: gray;
+    height: 45px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.90rem;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%; }
+    body #container #footer #left-footer, body #container #footer #right-footer {
+      margin: 16px; }
+      body #container #footer #left-footer a, body #container #footer #right-footer a {
+        color: #70757A;
+        margin: 10px; }
+      body #container #footer #left-footer a:hover, body #container #footer #right-footer a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=image-search.css.map */

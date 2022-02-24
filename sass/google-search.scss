@@ -1,0 +1,151 @@
+// Styles for Google Search Page
+
+$link-btn: #2B7DE9;
+$link-btn-textColor: #FFFFFF;
+$search-btn: #F8F9FA;
+$footer-bg: #F2F2F2;
+$footer-color: #70757A;
+
+.link-btn-style {
+    background-color: $link-btn;
+    color: $link-btn-textColor;
+    border: 1px solid $link-btn;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.search-bar-style {
+    height: 43px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 25px;
+    margin: 0 auto;
+    max-width: 585px;
+    padding: 10px;
+    font-size: 1.05rem;
+    outline: none;
+    width: 570px; 
+    padding-left: 45px;
+    margin-top: 25px;   
+    font-family: Arial, sans-serif;
+}
+
+.search-btn-style {
+    background-color: $search-btn;
+    color: #333;
+    padding: 0 16px;
+    text-align: center;
+    height: 35px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    #container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: 100%;
+
+        #links {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin-top: 15px;
+            height: 100px;
+            a {
+                margin: 12px;
+                button {
+                    @extend .link-btn-style;
+                }
+                button:hover {
+                    opacity: 0.9;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #search-box {
+            margin-top: 120px;
+            height: 200px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            #search-icon {
+                position: absolute;
+                top: 75%;
+                left: 32.2%;
+                bottom: 0;
+                right: 0;
+                color: #9aa0a6;
+            }
+            form {
+                display: block;
+                flex-flow: column wrap;
+                #search-bar {
+                    display: block;
+                    @extend .search-bar-style;
+                }
+                #search-bar:hover {
+                    background-color: #fff;
+                    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+                    border-color: rgba(223,225,229,0);
+                }
+                input[type=submit] {
+                    position: absolute;
+                    margin: 30px;
+                    margin-left: 128px;
+                    @extend .search-btn-style;
+                }
+                #lucky {
+                    margin-left: 278px;
+                }
+                input[type=submit]:hover {
+                    cursor: pointer;
+                    border: 1px solid #dfdfe0;
+                }
+                
+            }
+
+            img {
+                display: block;
+                width: 19%;
+            }
+        }
+
+        #footer {
+            background-color: gray;
+            height: 45px;
+            background-color: $footer-bg;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.90rem;
+            font-family: Arial, sans-serif;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            #left-footer , #right-footer {
+                margin: 16px;
+                a {
+                    color: $footer-color;
+                    margin: 10px;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

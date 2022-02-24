@@ -1,0 +1,19 @@
+/* Main Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    color: #202124;
+}
+
+a {
+    text-decoration: none;
+}

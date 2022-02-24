@@ -1,0 +1,198 @@
+// Styles for Advanced Search Page
+
+$link-btn: #E60965;
+$link-btn-textColor: #FFFFFF;
+$footer-bg: #F2F2F2;
+$footer-color: #70757A;
+$title-color: #D93025;
+$search-btn: #4589F7;
+$search-btn-color: #FFFFFF;
+
+.link-btn-style {
+    background-color: $link-btn;
+    color: $link-btn-textColor;
+    border: 1px solid $link-btn;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.submit-btn {
+    width: 150px;
+    height: 30px;
+    font-family: Arial, sans-serif;
+    background-color: $search-btn;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0 12px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+body {
+    #container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: 100%;
+
+        #links {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin-top: 15px;
+            height: 100px;
+            a {
+                margin: 12px;
+                align-self: flex-start;
+                button {
+                    @extend .link-btn-style;
+                }
+                button:hover {
+                    opacity: 0.9;
+                    cursor: pointer;
+                }
+            }
+            img {
+                width: 90px;
+                align-self: flex-start;
+                margin: 12px;
+            }
+        }
+
+        #adv-search {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+
+            h2 {
+                margin-left: 40px;
+                font-family: Arial, sans-serif;
+                font-weight: inherit;
+                color: $title-color;
+                margin-top: -5px;
+            }
+            #line {
+                width: 100%;
+                height: 47px;
+                border-bottom: 1px solid rgb(236, 234, 234);
+                margin-top: -40px;
+            }
+            #title {
+                display: flex;
+                flex-flow: row wrap;
+                width: 70%;
+                justify-content: space-between;  
+                margin-top: 30px;
+                margin-left: 40px;
+                p {
+                    font-family: Arial, sans-serif;
+                    font-size: 0.93rem;
+                }
+                #title-2 {
+                    margin-right: 150px;
+                    color: #666;
+                }
+            }
+            form {
+                margin-top: 10px;
+                margin-left: 40px;
+                #form-first-div {
+                    margin-top: 3px;
+                    #tiny-text1 {
+                        font-family: monospace;
+                        font-size: 0.73rem;
+                    }
+                }
+                div {
+                    margin-top: 8px;
+                    width: 90%;
+                    label {
+                        font-size: 0.86rem;
+                    }
+                    span {
+                        font-size: 0.77rem;        
+                        font-family: Arial, sans-serif;
+                        color: #666;
+                        margin-left: 10px;
+                    }
+                    input {
+                        text-align: left;
+                        border: 1px solid #d9d9d9;
+                        font-family: Arial, sans-serif;
+                        font-size: 0.90rem;
+                        border-top: 1px solid #c0c0c0;
+                        width: 550px;
+                        height: 30px;
+                        padding: 1px 8px;
+                    }
+                }
+                #all {
+                    margin-left: 80px;
+                }
+                #exact {
+                    margin-left: 20px;
+                }
+                #any {
+                    margin-left: 57px;
+                }
+                #none {
+                    margin-left: 46px;
+                }
+                #submit-container {
+                    display: flex;
+                    justify-content: center;
+                    #submit {
+                        @extend .submit-btn;
+                    }
+                    #submit:hover {
+                        background-color: #357ae8;
+                    }
+                }
+                #tiny-text2 {
+                    font-family: monospace;
+                    font-size: 0.73rem;
+                }
+                #tiny-text3 {
+                    font-family: monospace;
+                    font-size: 0.73rem;
+                }
+                #tiny-text4 {
+                    font-family: monospace;
+                    font-size: 0.73rem;
+                }
+            }
+        }
+
+
+        #footer {
+            background-color: gray;
+            height: 38px;
+            background-color: $footer-bg;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            font-size: 0.90rem;
+            font-family: Arial, sans-serif;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid rgb(223, 213, 213);
+            #left-footer {
+                margin: 10px;
+                margin-left: 32px;
+                a {
+                    color: $footer-color;
+                    margin: 10px;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

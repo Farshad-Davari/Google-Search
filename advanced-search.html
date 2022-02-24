@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50 -Project 0- Advanced Search</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="style/advance-search.css">
+</head>
+<body>
+     
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Links Section -->
+        <div id="links">
+           <a href="index.html"><img src="pics/googlelogo_color_272x92dp.png"></a>
+           <a href="index.html"><button>Google Search</button></a>
+        </div>
+
+        <!-- Advance Search Section -->
+        <div id="adv-search">
+            <h2>Advanced Search</h2>
+            <div id="line"></div>
+            <div id="title">
+                <p>Find Pages With...</p>
+                <p id="title-2">To do this in the search box.</p>
+            </div>
+            <form action="https://google.com/search">
+
+                <div id="form-first-div">
+                    <label>all these words: </label>
+                    <input type="text" name="as_q" id="all">
+                    <span>Type the important words:<span id="tiny-text1">tri-colour rat terrier</span></span>
+                </div>  
+
+                <br>
+
+                <div>
+                    <label>this exact word or phrase: </label>
+                    <input type="text" name="as_epq" id="exact">
+                    <span>Put exact words in quotes:<span id="tiny-text2">"rat terrier"</span></span>
+                </div>
+
+                <br>
+
+                <div>
+                    <label>any of these words: </label>
+                    <input type="text" name="as_oq" id="any">
+                    <span>Type OR between all the words you want:<span id="tiny-text3">miniature OR standard</span></span>
+                </div>
+
+                <br>
+
+                <div>    
+                    <label>none of these words: </label>
+                    <input type="text" name="as_eq" id="none">
+                    <span>Put a minus sign just before words that you don't:<span id="tiny-text4">-rodent, -"Jack Russell"</span></span>
+                </div> 
+
+                <br>
+                <div id="submit-container">
+                    <input type="submit" value="advanced search" id="submit">
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer">
+            <div id="left-footer">
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

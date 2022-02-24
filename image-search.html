@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50 -Project 0- Image Search</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="style/image-search.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Links Section -->
+        <div id="links">
+            <a href="index.html"><button>Google Search</button></a>
+        </div>
+
+        <!-- Search Section -->
+        <div id="search-box">
+            <img src="pics/googlelogo_color_272x92dp.png">
+            <span>images</span>
+            <i class="material-icons medium" id="search-1">search</i>      
+            <span id="photo"></span>
+            <i class="material-icons medium" id="search-2">search</i>   
+            <form action="https://images.google.com/images">
+                <input id="search-bar" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="none" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwiM0L_FuL31AhVvzoUKHV00Ae8Q39UDCAM">
+                <input type="submit" value="Image Search" id="gs">
+            </form> 
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer">
+            <div id="left-footer">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
+            <div id="right-footer">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

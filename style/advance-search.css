@@ -1,0 +1,144 @@
+.link-btn-style, body #container #links a button {
+  background-color: #E60965;
+  color: #FFFFFF;
+  border: 1px solid #E60965;
+  padding: 10px;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-weight: bold; }
+
+.submit-btn, body #container #adv-search form #submit-container #submit {
+  width: 150px;
+  height: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #4589F7;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 0 12px;
+  border-radius: 2px;
+  font-size: 13px; }
+
+body #container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100%; }
+  body #container #links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: 100px; }
+    body #container #links a {
+      margin: 12px;
+      align-self: flex-start; }
+      body #container #links a button:hover {
+        opacity: 0.9;
+        cursor: pointer; }
+    body #container #links img {
+      width: 90px;
+      align-self: flex-start;
+      margin: 12px; }
+  body #container #adv-search {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start; }
+    body #container #adv-search h2 {
+      margin-left: 40px;
+      font-family: Arial, sans-serif;
+      font-weight: inherit;
+      color: #D93025;
+      margin-top: -5px; }
+    body #container #adv-search #line {
+      width: 100%;
+      height: 47px;
+      border-bottom: 1px solid #eceaea;
+      margin-top: -40px; }
+    body #container #adv-search #title {
+      display: flex;
+      flex-flow: row wrap;
+      width: 70%;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-left: 40px; }
+      body #container #adv-search #title p {
+        font-family: Arial, sans-serif;
+        font-size: 0.93rem; }
+      body #container #adv-search #title #title-2 {
+        margin-right: 150px;
+        color: #666; }
+    body #container #adv-search form {
+      margin-top: 10px;
+      margin-left: 40px; }
+      body #container #adv-search form #form-first-div {
+        margin-top: 3px; }
+        body #container #adv-search form #form-first-div #tiny-text1 {
+          font-family: monospace;
+          font-size: 0.73rem; }
+      body #container #adv-search form div {
+        margin-top: 8px;
+        width: 90%; }
+        body #container #adv-search form div label {
+          font-size: 0.86rem; }
+        body #container #adv-search form div span {
+          font-size: 0.77rem;
+          font-family: Arial, sans-serif;
+          color: #666;
+          margin-left: 10px; }
+        body #container #adv-search form div input {
+          text-align: left;
+          border: 1px solid #d9d9d9;
+          font-family: Arial, sans-serif;
+          font-size: 0.90rem;
+          border-top: 1px solid #c0c0c0;
+          width: 550px;
+          height: 30px;
+          padding: 1px 8px; }
+      body #container #adv-search form #all {
+        margin-left: 80px; }
+      body #container #adv-search form #exact {
+        margin-left: 20px; }
+      body #container #adv-search form #any {
+        margin-left: 57px; }
+      body #container #adv-search form #none {
+        margin-left: 46px; }
+      body #container #adv-search form #submit-container {
+        display: flex;
+        justify-content: center; }
+        body #container #adv-search form #submit-container #submit:hover {
+          background-color: #357ae8; }
+      body #container #adv-search form #tiny-text2 {
+        font-family: monospace;
+        font-size: 0.73rem; }
+      body #container #adv-search form #tiny-text3 {
+        font-family: monospace;
+        font-size: 0.73rem; }
+      body #container #adv-search form #tiny-text4 {
+        font-family: monospace;
+        font-size: 0.73rem; }
+  body #container #footer {
+    background-color: gray;
+    height: 38px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 0.90rem;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #dfd5d5; }
+    body #container #footer #left-footer {
+      margin: 10px;
+      margin-left: 32px; }
+      body #container #footer #left-footer a {
+        color: #70757A;
+        margin: 10px; }
+      body #container #footer #left-footer a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=advance-search.css.map */
